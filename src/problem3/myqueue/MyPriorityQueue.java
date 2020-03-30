@@ -6,5 +6,14 @@
  */
 package problem3.myqueue;
 
+import problem3.node.Node;
+
 public class MyPriorityQueue {
+    Node head;
+
+    public MyPriorityQueue() {
+        head = null;
+    }
+
+
 }
