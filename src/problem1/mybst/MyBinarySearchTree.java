@@ -12,4 +12,13 @@ import problem1.node.TreeNode;
 public class MyBinarySearchTree {
     TreeNode root;
     int count;
+
+    public MyBinarySearchTree() {
+        root = null;
+        count = 0;
+    }
+
+    public TreeNode getRoot() {
+        return root;
+    }
 }
