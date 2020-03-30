@@ -17,7 +17,7 @@ public class TreeNode {
         right = null;
     }
 
-    public int getData(int data) {
+    public int getData() {
         return data;
     }
 

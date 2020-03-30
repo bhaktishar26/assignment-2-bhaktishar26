@@ -21,4 +21,38 @@ public class MyBinarySearchTree {
     public TreeNode getRoot() {
         return root;
     }
+
+    public void insert(int data) {
+        TreeNode tn = new TreeNode(data);
+        tn.setData(data);
+        if(root == null) {
+            root = tn;
+        }
+        else {
+            TreeNode temp = root;
+            while(true) {
+                if(data > temp.getData()) {
+                    if(temp.getRight()==null) {
+                        temp.setRight(tn);
+                        break;
+                    }
+                    else {
+                        temp = temp.getRight();
+                    }
+                }
+                else {
+                    if(temp.getLeft()==null) {
+                        temp.setLeft(tn);
+                        break;
+                    }
+                    else {
+                        temp = temp.getLeft();
+                    }
+                }
+            }
+        }
+
+    }
+
+
 }
