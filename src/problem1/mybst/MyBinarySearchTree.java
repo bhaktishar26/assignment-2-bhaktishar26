@@ -51,8 +51,57 @@ public class MyBinarySearchTree {
                 }
             }
         }
-
+    }
+    private void LeftNode(TreeNode root) {
+        if(root==null) {
+            return;
+        }
+        else {
+            if(root.getLeft()!=null) {
+                System.out.println(root.getLeft().getData());
+            }
+            else {
+                count++;
+            }
+            LeftNode(root.getLeft());
+            LeftNode(root.getRight());
+        }
     }
 
+    private void printLeftNode() {
+        LeftNode(root);
+    }
 
+    public void count() {
+        System.out.println(count);
+    }
+
+    public void preOrder(TreeNode root) {
+        if(root == null) {
+            return;
+        }
+        else {
+            System.out.print(root.getData()+"\t");
+            preOrder(root.getLeft());
+            preOrder(root.getRight());
+        }
+    }
+
+    public void postOrder(TreeNode root) {
+        if(root==null) {
+            return;
+        }
+        else {
+            postOrder(root.getLeft());
+            postOrder(root.getRight());
+            System.out.print(root.getData()+"\t");
+        }
+    }
+
+    public void preVSpost() {
+        postOrder(root);
+        System.out.println();
+        preOrder(root);
+    }
 }
+
