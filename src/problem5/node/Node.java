@@ -17,7 +17,7 @@ public class Node {
         return student;
     }
 
-    public void setStudent(Student sstudent) {
+    public void setStudent(Student student) {
         this.student = student;
     }
 
