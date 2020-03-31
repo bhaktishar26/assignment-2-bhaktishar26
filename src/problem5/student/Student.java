@@ -7,4 +7,12 @@
 package problem5.student;
 // to store student information and properties
 public class Student {
+    private int roll;
+    private int backlog;
+    private int appearCount;
+
+
+
+
+
 }
