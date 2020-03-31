@@ -11,8 +11,8 @@ import problem1.node.TreeNode;
 
 public class MyQueue {
     class Node {
-        int data;
-        Node next;
+        private int data;
+        private Node next;
 
         public int getData() {
             return data;

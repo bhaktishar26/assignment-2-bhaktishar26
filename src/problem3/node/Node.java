@@ -7,9 +7,9 @@
 package problem3.node;
 
 public class Node {
-    String name;
-    int roll;
-    Node next;
+    private String name;
+    private int roll;
+    private Node next;
 
     public String getName() {
         return name;
@@ -34,7 +34,4 @@ public class Node {
     public void setNext(Node next) {
         this.next = next;
     }
-
-
-
 }
